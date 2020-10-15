@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_universe/detail_page.dart';
+import 'package:Annapurna/detail_page.dart';
 import 'constants.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
@@ -31,37 +31,34 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      'Explore',
+                      'Annapurna',
                       style: TextStyle(
-                        fontFamily: 'Avenir',
+                        fontFamily: 'Hinglish',
                         fontSize: 44,
                         color: const Color(0xffffffff),
                         fontWeight: FontWeight.w900,
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    DropdownButton(
-                      items: [
-                        DropdownMenuItem(
-                          child: Text(
-                            'Solar System',
-                            style: TextStyle(
-                              fontFamily: 'Avenir',
-                              fontSize: 24,
-                              color: const Color(0x7cdbf1ff),
-                              fontWeight: FontWeight.w500,
-                            ),
-                            textAlign: TextAlign.left,
-                          ),
-                        ),
-                      ],
-                      onChanged: (value) {},
-                      icon: Padding(
-                        padding: const EdgeInsets.only(left: 16.0),
-                        child: Image.asset('assets/drop_down_icon.png'),
+                    Text(
+                      'If you cant feed a hundred people, then feed just one.',
+                      style: TextStyle(
+                        fontFamily: 'Avenir',
+                        fontSize: 20,
+                        color: const Color(0x7cdbf1ff),
+                        fontWeight: FontWeight.w800,
                       ),
-                      underline: SizedBox(),
                     ),
+                    Text(
+                      '                              - Mother Teresa',
+                      style: TextStyle(
+                        fontFamily: 'Avenir',
+                        fontSize: 18,
+                        color: const Color(0x7cdbf1ff),
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.right,
+                    )
                   ],
                 ),
               ),
@@ -113,16 +110,6 @@ class _HomePageState extends State<HomePage> {
                                           fontSize: 44,
                                           color: const Color(0xff47455f),
                                           fontWeight: FontWeight.w900,
-                                        ),
-                                        textAlign: TextAlign.left,
-                                      ),
-                                      Text(
-                                        'Solar System',
-                                        style: TextStyle(
-                                          fontFamily: 'Avenir',
-                                          fontSize: 23,
-                                          color: primaryTextColor,
-                                          fontWeight: FontWeight.w500,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
