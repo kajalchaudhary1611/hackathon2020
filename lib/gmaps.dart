@@ -21,14 +21,6 @@ class _GMapState extends State<GMap> {
   BitmapDescriptor _markerIcon;
 
   @override
-  void initState() {
-    super.initState();
-    _setMarkerIcon();
-    _setPolygons();
-    _setPolylines();
-    _setCircles();
-  }
-
   void _setMarkerIcon() async {
     _markerIcon = await BitmapDescriptor.fromAssetImage(
         ImageConfiguration(), 'assets/noodle_icon.png');
