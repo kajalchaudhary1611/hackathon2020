@@ -37,23 +37,6 @@ class _GMapState extends State<GMap> {
     }
   }
 
-  void _setPolygons() {
-    List<LatLng> polygonLatLongs = List<LatLng>();
-    polygonLatLongs.add(LatLng(37.78493, -122.42932));
-    polygonLatLongs.add(LatLng(37.78693, -122.41942));
-    polygonLatLongs.add(LatLng(37.78923, -122.41542));
-    polygonLatLongs.add(LatLng(37.78923, -122.42582));
-
-    _polygons.add(
-      Polygon(
-        polygonId: PolygonId("0"),
-        points: polygonLatLongs,
-        fillColor: Colors.white,
-        strokeWidth: 1,
-      ),
-    );
-  }
-
   void _setPolylines() {
     List<LatLng> polylineLatLongs = List<LatLng>();
     polylineLatLongs.add(LatLng(37.74493, -122.42932));
